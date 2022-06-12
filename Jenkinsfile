@@ -12,7 +12,7 @@ pipeline{
         stage("paso 1"){
             steps{
                 script {
-                    cmd "echo 'Hello World"
+                    "echo 'Hello World"
                 }
             }
         }
@@ -20,13 +20,13 @@ pipeline{
     post{
         always {
             deleteDirectory()
-            cmd "echo 'fase always'"
+                "echo 'fase always'"
         }
         success{
-            cmd "echo 'face sucess"
+            "echo 'face sucess"
         }
         failure{
-            cmd "echo 'fase failure'"
+            "echo 'fase failure'"
         }
     }
 }
