@@ -19,7 +19,7 @@ pipeline{
     }
     post{
         always {
-            deleteDirectory()
+            deleteDir()
                 echo 'fase always'
         }
         success{
